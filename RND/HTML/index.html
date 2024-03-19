@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetFuse</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "Product Name",
+          "image": "product.jpg",
+          "description": "Description of the product.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Brand Name"
+          },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "19.99",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "Seller Name"
+            }
+          }
+        }
+        </script>
+        
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html"><img src="icons/street-view-regular-24.png" alt="StreetFuse Logo"></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button type="submit">Search</button>
+            </div>
+            <div class="user-actions">
+                <a href="login.html">Login</a> / <a href="register.html">Register</a>
+                <a href="cart.html">Cart <span class="cart-items">(0)</span></a>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main>
+        <!-- Product Listings -->
+        <section class="product-listings">
+            <h2>Featured Products</h2>
+            <article class="product-card">
+                <a href="product.html">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$19.99</p>
+                </a>
+            </article>
+            <!-- Repeat product cards for other products -->
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="icons/facebook-logo-24.png" alt="Facebook"></a>
+            <a href="#"><img src="icons/twitter-logo-24.png" alt="Twitter"></a>
+            <a href="#"><img src="icons/instagram-logo-24.png" alt="Instagram"></a>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <form action="subscribe.php" method="POST">
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- Implement browser caching -->
+        <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate">
+        <!-- Implement server-side caching -->
+        <meta http-equiv="Cache-Control" content="public">
+
+    </footer>
+</body>
+
+</html>
