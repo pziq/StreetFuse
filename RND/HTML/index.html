@@ -9,30 +9,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet">
 
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org/",
-          "@type": "Product",
-          "name": "Product Name",
-          "image": "product.jpg",
-          "description": "Description of the product.",
-          "brand": {
-            "@type": "Brand",
-            "name": "Brand Name"
-          },
-          "offers": {
-            "@type": "Offer",
-            "priceCurrency": "USD",
-            "price": "19.99",
-            "availability": "https://schema.org/InStock",
-            "seller": {
-              "@type": "Organization",
-              "name": "Seller Name"
-            }
-          }
-        }
-        </script>
-        
+    <!-- setup SEO stuff-->
+
 
 </head>
 
@@ -41,7 +19,7 @@
     <header>
 
         <div class="logo">
-            <a href="index.html"><img src="icons/street-view-regular-24.png" alt="StreetFuse Logo"></a>
+            <a href="index.html"><img src="icons/color-regular-24.png" alt="StreetFuse Logo"></a>
         </div>
 
         <nav>
@@ -50,16 +28,11 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="search-bar">
-                <input type="text" placeholder="Search products...">
-                <button type="submit">Search</button>
-            </div>
-            <div class="user-actions">
-                <a href="login.html">Login</a> / <a href="register.html">Register</a>
-                <a href="cart.html">Cart <span class="cart-items">(0)</span></a>
-            </div>
         </nav>
 
+        <button class="account-button">
+            <img src="icons/user-regular-24.png" alt="Account">
+          </button>
 
     </header>
 
@@ -93,18 +66,6 @@
             <a href="#"><img src="icons/twitter-logo-24.png" alt="Twitter"></a>
             <a href="#"><img src="icons/instagram-logo-24.png" alt="Instagram"></a>
         </div>
-        <div class="newsletter">
-            <h3>Subscribe to our Newsletter</h3>
-            <form action="subscribe.php" method="POST">
-                <input type="email" name="email" placeholder="Enter your email">
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-
-        <!-- Implement browser caching -->
-        <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate">
-        <!-- Implement server-side caching -->
-        <meta http-equiv="Cache-Control" content="public">
 
     </footer>
 </body>
